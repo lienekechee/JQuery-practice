@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("img").click(function(){
+		$("#broccoli").hide();
+		$("#aok").fadeOut("slow");
+	
+	})
+	$("ol li").hover(function(){
+		$("#swing").hide();
+		$("#wheel").fadeOut();
+	});
+	$("p").dblclick(function(){
+		$("img").show();
+	})
+	$("h1").mouseenter(function(){
+		$(this).slideToggle();
+	});
+	$ ("p:first").click(function(){
+		$("broccoli").show();
+	})
+});
+
+</script>
+
+	<title>JQUERY ASSIGNMENT</title>
+</head>
+<body>
+<h1>HAMSTERS</h1>
+<h2>i love hamsters. why, you ask.</h2>
+<ol>
+	<li>They are cute</li>
+	<li>They are small</li>
+	<li>They are fluffy</li>
+	<li>They are good sports</li>
+	<li>They are brave</li>
+</ol>
+
+<p>Here is a hamster, enjoying some broccoli </p>
+<img id = "broccoli" src="http://www.petakids.com/wp-content/uploads/2014/07/all-about-hamsters-gerbils-2.jpg">
+
+<p>Here is another one, he is a-ok</p>
+<img id = "aok" src="https://s-media-cache-ak0.pinimg.com/736x/ac/ef/3e/acef3e01c913a80a0faf5e6fc59c66b8.jpg">
+
+<p>Check this one out, so cute</p>
+<img id = "swing" src="https://lh3.ggpht.com/T_T6kRcFaUiXkGNnmwR7KrHMRrMFqRFU2sCHBC6vlg2T2yim46o3rhm2DCbLt2tU7A=h900">
+
+<p>This is such a cool hamster. He is strong!</p>
+<img id = "wheel" src="https://i.ytimg.com/vi/X1kcTdzKb_E/hqdefault.jpg">
+
+</body>
+</html>
